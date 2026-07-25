@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Departures — Event Countdown</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="kicker">Now Boarding</div>
+    <h1>Event Countdown</h1>
+  </header>
+
+  <div class="board" id="board">
+    <div class="board-title"><span class="dot" id="featDot" style="background:var(--cobalt)"></span><span id="featTitle">Loading…</span></div>
+    <div class="board-sub" id="featSub">&nbsp;</div>
+    <div id="boardBody">
+      <div class="flap-groups" id="flapGroups"></div>
+    </div>
+  </div>
+
+  <div class="sec-label">Add an event</div>
+  <div class="add-form">
+    <input type="text" id="inTitle" placeholder="Event name" maxlength="40">
+    <input type="date" id="inDate">
+    <input type="time" id="inTime">
+    <button class="add-btn" id="addBtn">Add</button>
+  </div>
+  <div class="color-picks" id="colorPicks" style="margin:10px 2px 0;"></div>
+
+  <div class="sec-label">All events</div>
+  <div class="manifest" id="manifest"></div>
+
+  <footer>your events are saved to this browser · times are local</footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
